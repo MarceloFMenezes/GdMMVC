@@ -1,0 +1,47 @@
+<!--Namespace da classe de Modelo para esta view-->
+@model IEnumerable<GdMMVC.Models.MaterialViewModel>
+@if (@TempData["Mensagem"] != null)
+{
+ <div class="alert alert-success" role="alert">
+ @TempData["Mensagem"]</div>
+}
+<!--Configuração para exibir mensagem de erro -->
+@if (@TempData["MensagemErro"] != null)
+{
+ <div class="alert alert-danger" role="alert">
+ @TempData["MensagemErro"]</div>
+} @{
+    ViewBag.Title = "Materiais";
+}<!--Título da página para o navegador-->
+<h2>Materiais</h2><!--Título da página-->
+<p> <!--Links apontando para views na mesma pasta-->
+    @Html.ActionLink("Criar Novo Material", "Create")
+</p>
+<table class="table">
+    <tr><!--Títulos das colunas da tabela-->
+        <th>@Html.DisplayNameFor(model => model.Id)</th>
+        <th>@Html.DisplayNameFor(model => model.Nome)</th>
+        <th>@Html.DisplayNameFor(model => model.Marca)</th>
+        <th>@Html.DisplayNameFor(model => model.Cor)</th>
+        <th>@Html.DisplayNameFor(model => model.Tipo)</th>
+        <th>@Html.DisplayNameFor(model => model.Quantidade)</th>
+        <th></th>
+    </tr>
+    <!--Looping para escrever os dados na tabela-->
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@Html.DisplayFor(modelItem => item.Id)</td>
+            <td>@Html.DisplayFor(modelItem => item.Nome)</td>
+            <td>@Html.DisplayFor(modelItem => item.Marca)</td>
+            <td>@Html.DisplayFor(modelItem => item.Cor)</td>
+            <td>@Html.DisplayFor(modelItem => item.Tipo)</td>
+            <td>@Html.DisplayFor(modelItem => item.Quantidade)</td>
+            <td>
+                @Html.ActionLink("Editar", "Edit", new { id = item.Id } ) |
+                @Html.ActionLink("Deletar", "Delete", new { id = item.Id } 
+                    , new { onclick = "return confirm('Deseja realmente deletar este personagem?')"})
+            </td>
+        </tr>
+    }
+</table>

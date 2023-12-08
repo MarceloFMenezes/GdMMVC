@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "jQiVa1vSZUIKT0/gnE1bajw8uI3ZzjpW0pyQKQwOx90hoAS+/kpNU2V2ULHwU5sjoHRxhqby/corB/bIeE9gVw==",
+  "success": true,
+  "projectFilePath": "D:\\TecnicoDSII\\DS\\Trabalho de Conclusão\\Novo Projeto\\GdMMVC\\GdMMVC.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\marce\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\7.0.14\\microsoft.aspnetcore.jsonpatch.7.0.14.nupkg.sha512",
+    "C:\\Users\\marce\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\7.0.14\\microsoft.aspnetcore.mvc.newtonsoftjson.7.0.14.nupkg.sha512",
+    "C:\\Users\\marce\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\marce\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\marce\\.nuget\\packages\\newtonsoft.json.bson\\1.0.2\\newtonsoft.json.bson.1.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}
